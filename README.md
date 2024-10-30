@@ -27,6 +27,8 @@ The dataset consists of 2357 images of malignant and benign oncological diseases
 
 The aim of this task is to assign a specific class label to a particular type of skin cancer.
 
+![datasetgraph](./Distribution of class.png)
+
 ## Model Architecture
 
 The break down of the final provided CNN architecture step by step:
