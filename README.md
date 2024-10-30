@@ -58,6 +58,7 @@ The break down of the final provided CNN architecture step by step:
 
 
 ## Model Evaluation
+![image](https://github.com/user-attachments/assets/05271e39-2765-4b83-b2ad-42d621a0b9f8)
 
 
 
