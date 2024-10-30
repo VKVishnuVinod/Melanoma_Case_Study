@@ -34,7 +34,6 @@ The aim of this task is to assign a specific class label to a particular type of
 
 ## Model Architecture
 
-The break down of the final provided CNN architecture step by step:
 
 1. **Data Augmentation** : The augmentation_data variable applies various augmentation techniques to the training data. By introducing random transformations like rotation, scaling, and flipping, data augmentation increases the diversity of the training dataset, which enhances the model's ability to generalize.
 2. **Normalization** : A Rescaling(1./255) layer is used to normalize pixel values, scaling them to a range between 0 and 1. Normalization stabilizes training and speeds up convergence.
@@ -51,7 +50,8 @@ The break down of the final provided CNN architecture step by step:
 8. **Output Layer**: The number of neurons in the output layer matches the target_labels variable, representing the number of classes. No activation function is specified here, as the loss function will handle it during training.
 
 9. **Model Compilation** : The model is compiled using the Adam optimizer (optimizer='adam') and Sparse Categorical Crossentropy loss (loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)), ideal for multi-class classification. Accuracy (metrics=['accuracy']) is selected as the evaluation metric.
-10. **Training**: The model is trained with the fit method for a specified number of epochs (epochs=50). Two callbacks, ModelCheckpoint and EarlyStopping, monitor validation accuracy. ModelCheckpoint saves the model with the best validation accuracy, while EarlyStopping halts training if validation accuracy does not improve after a specified patience period (patience=5). These callbacks help avoid overfitting and ensure optimal model performance.
+    
+11. **Training**: The model is trained with the fit method for a specified number of epochs (epochs=50). Two callbacks, ModelCheckpoint and EarlyStopping, monitor validation accuracy. ModelCheckpoint saves the model with the best validation accuracy, while EarlyStopping halts training if validation accuracy does not improve after a specified patience period (patience=5). These callbacks help avoid overfitting and ensure optimal model performance.
 
 ## Model Summary
 
@@ -66,10 +66,10 @@ The break down of the final provided CNN architecture step by step:
 
 - [Python](https://www.python.org/) - version 3.11.4
 - [Matplotlib](https://matplotlib.org/) - version 3.7.1
-- [Numpy](https://numpy.org/) - version 1.24.3
-- [Pandas](https://pandas.pydata.org/) - version 1.5.3
-- [Seaborn](https://seaborn.pydata.org/) - version 0.12.2
-- [Tensorflow](https://www.tensorflow.org/) - version 2.15.0
+- [Numpy](https://numpy.org/) - version 1.26.3
+- [Pandas](https://pandas.pydata.org/) - version 2.2.2
+- [Seaborn](https://seaborn.pydata.org/) - version 0.13.2
+- [Tensorflow](https://www.tensorflow.org/) - version 2.17.0
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
