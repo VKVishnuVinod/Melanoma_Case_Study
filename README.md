@@ -27,7 +27,8 @@ The dataset consists of 2357 images of malignant and benign oncological diseases
 
 The aim of this task is to assign a specific class label to a particular type of skin cancer.
 
-![datasetgraph](./Distribution of class.png)
+[![datasetgraph](./Distribution of class.png)](https://github.com/VKVishnuVinod/Melanoma_Case_Study/blob/main/Various%20Skin%20Types.png?raw=true)![image](https://github.com/user-attachments/assets/b07ed177-e7d1-4117-8014-aa715765477b)
+
 
 ## Model Architecture
 
